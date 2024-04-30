@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ingresos y Gastos - L'sM</title>
+		<link rel="icon" type="image/jpg" href="img/favicon.png"/>
+		<link type="text/css" href="css/estilo-ingresosGastos.css" rel="stylesheet">
+	
+		
+				<!-- Enlaces para importar las fuentes -->
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+					
+
+				<!-- Exo 2  - font-family: 'Exo 2', sans-serif; -->
+				<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
+
+				<!-- Lexend Tera  - font-family: 'Lexend Tera', sans-serif; -->
+				<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+
+				<!-- Viga  - font-family: 'Viga', sans-serif; -->
+				<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+
+	</head>
+
+    <body>
+
+		<a name="inicio"></a>
+		<div class="logo">
+
+			<a href="index.html"><img src="img/Life'sMoney.png" class="imgNombre"></a>		
+			<a href="index.html"><img src="img/logoLM.png" class="imgLogo"></a>
+			
+
+			<!-- Información del Cliente -->
+			<img src="img/candado.png" class="candado">
+			<table>
+				<tr>
+					<th colspan="2"><img src="img/LifesMoneyHub.png" class=""></th>
+				</tr>
+				<tr>
+					<td><font class="profile">Bienvenido John Doe</font></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+			<a href="espacioPersonal.html"><img src="img/perfil.png" class="perfil"></a><a href="index.html"><img src="img/power.png" class="power"></a><font class="desconectar">Desconectar</font>
+		</div>
+
+		<main>
+
+			<!-- Menú desplegable -->
+			<input type="checkbox" id="toggle">
+			<label for="toggle" class="menu-icon">
+				<span class="line"></span>
+        		<span class="line"></span>
+        		<span class="line"></span>
+			</label>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li>
+						<a href="servicios.html">Servicios</a>
+						<ul>
+							<li><a href="envioDinero.html">Envío de dinero</a></li>
+							<li><a href="tarjetas.html">Tarjetas</a></li>
+							<li><a href="ingresosGastos.html">Ingresos y gastos</a></li>
+							
+						</ul>
+					</li>
+					<li>
+						<a href="sobreNosotros.html">Sobre Nosotros</a>
+						<ul>
+							<li><a href="equipo.html">Nuestro equipo</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+						</ul>
+					</li>
+					<li>
+                        <a href="espacioPersonal.html">Espacio personal</a>
+                    </li>
+				</ul>
+			</nav>
+
+			<!-- Comienzo con la información de la página -->
+
+			<section>
+				<div class="contenedores" id="primerContenedor">
+					<h3>RECIBOS</h3>
+					<table class="recibos">
+						<tr>
+							<td>02/12</td>
+							<td>Hipoteca</td>
+							<td class="precio">325,50€</td>
+						</tr>
+						<tr>
+							<td>02/12</td>
+							<td>Amazon Payments</td>
+							<td class="precio">24,49€</td>
+						</tr>
+						<tr>
+							<td>28/11</td>
+							<td>Préstamo personal</td>
+							<td class="precio">60,85€</td>
+						</tr>
+						<tr>
+							<td>25/11</td>
+							<td>Telefonía</td>
+							<td class="precio">85,54€</td>
+						</tr>
+					</table>	
+				</div>
+
+				<div class="contenedores">
+					<h3>INGRESOS Y GASTOS DEL MES</h3>
+					<img src="img/ingresosGastos.png" class="ingresos">
+				</div>
+				
+				<div class="contenedores">
+					<h3>informeHUB</h3>
+					<table>
+						<tr>
+							<td><img src="img/informeHUB.png" class="informe"></td>
+							<td><font >Ya tienes disponible<br>tu informe de Noviembre.<br>Has tenido una diferencia de:<br></font>
+								<font class="inf">-554,82 €</font><br>
+								<font>60,9% más que el mes anterior</font></td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="contenedores">
+					<h3>MIS CUENTA</h3>
+					<table class="cuentas">
+						<tr>
+							<td>Saldo total de mis cuentas</td>
+							<td class="precio">42.112,98€</td>
+						</tr>
+					</table>
+					<table class="cuentas">
+						<tr class="peque">
+							<td>John Doe - Cuenta ...1516</td>
+							<td class="precio">40.112,98€</td>
+						</tr>
+						<tr class="peque">
+							<td>John Doe Life's- Cuenta ...0051</td>
+							<td class="precio">2.000,00€</td>
+						</tr>
+					</table>
+
+				</div>
+				
+				<div class="contenedores">
+					<h3>ÚLTIMOS MOVIMIENTOS</h3>
+					<table class="movimientos">
+						<tr>
+							<td>04/12</td>
+							<td>Bizum RECIBIDO</td>
+							<td style="color: #084008dc" class="precio">+8,00€</td>
+						</tr>
+						<tr>
+							<td>03/12</td>
+							<td>Supermecado</td>
+							<td style="color:brown" class="precio">-34,69€</td>
+						</tr>
+						<tr>
+							<td>03/12</td>
+							<td>Farmacia</td>
+							<td style="color:brown" class="precio">-6,25€</td>
+						</tr>
+						<tr>
+							<td>01/12</td>
+							<td>Nómina</td>
+							<td style="color: #084008dc" class="precio">+985,00€</td>
+						</tr>
+					</table>	
+				</div>
+			</section>
+		</main>
+
+
+		<!-- CHAT -->
+
+        <input type="checkbox" id="chat-toggle">
+		<label for="chat-toggle" id="chat-button">Chatea con tu gestor</label>
+		<div class="chat-container">
+			<div class="chat-panel">
+				<label for="chat-toggle" class="chat-tab">
+					<div class="chat-icon"></div>
+				</label>
+                
+				<div class="chat-content">
+					<div class="dir">
+                        <h2 class="dir-title">Contacta con tu gestor:</h2>
+                        <h3 class="chatH3">Eliseo Villena</h3>
+                        <br>
+                        <p>☎ 755.123.654<br>✉ e_villena@lifesmoney.es<br></p>
+						<h3 class="chatH3">Comienza a chatear en este momento:</h3>
+                        <br>
+						<p class="chatP">Por favor, introduce tu mensaje. Tu gestor te responderá lo antes posible.</p>
+            			<br>
+						<textarea placeholder="Escribe aquí..."></textarea>
+						<br><br>
+						<button>Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<a href="#inicio"><img src="img/flecha.png" class="up"></a>
+
+		<footer>
+			<div>
+				<p>· Página Web creada por: <font>Yohanna Gelo</font> · Asignatura: <font>Lenguaje de Marcas 2023/24</font> · Curso: <font>1º DAW</font></p>
+			</div>
+		</footer>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Envío de dinero - L'sM</title>
+		<link rel="icon" type="image/jpg" href="img/favicon.png"/>
+		<link type="text/css" href="css/estilo-servicios-2.css" rel="stylesheet">
+	
+		
+				<!-- Enlaces para importar las fuentes -->
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+					
+
+				<!-- Exo 2  - font-family: 'Exo 2', sans-serif; -->
+				<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
+
+				<!-- Lexend Tera  - font-family: 'Lexend Tera', sans-serif; -->
+				<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+
+				<!-- Viga  - font-family: 'Viga', sans-serif; -->
+				<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+
+	</head>
+
+    <body>
+
+		<a name="inicio"></a>
+		<div class="logo">
+
+			<a href="index.html"><img src="img/Life'sMoney.png" class="imgNombre"></a>		
+			<a href="index.html"><img src="img/logoLM.png" class="imgLogo"></a>
+			
+
+			<!-- Información del Cliente -->
+			<img src="img/candado.png" class="candado">
+			<table>
+				<tr>
+					<th colspan="2"><img src="img/LifesMoneyHub.png" class=""></th>
+				</tr>
+				<tr>
+					<td><font class="profile">Bienvenido John Doe</font></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+			<a href="espacioPersonal.html"><img src="img/perfil.png" class="perfil"></a><a href="index.html"><img src="img/power.png" class="power"></a><font class="desconectar">Desconectar</font>
+		</div>
+
+		<main>
+
+			<!-- Menú desplegable -->
+			<input type="checkbox" id="toggle">
+			<label for="toggle" class="menu-icon">
+				<span class="line"></span>
+        		<span class="line"></span>
+        		<span class="line"></span>
+			</label>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li>
+						<a href="servicios.html">Servicios</a>
+						<ul>
+							<li><a href="envioDinero.html">Envío de dinero</a></li>
+							<li><a href="tarjetas.html">Tarjetas</a></li>
+							<li><a href="ingresosGastos.html">Ingresos y gastos</a></li>
+							
+						</ul>
+					</li>
+					<li>
+						<a href="sobreNosotros.html">Sobre Nosotros</a>
+						<ul>
+							<li><a href="equipo.html">Nuestro equipo</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+						</ul>
+					</li>
+					<li>
+                        <a href="espacioPersonal.html">Espacio personal</a>
+                    </li>
+				</ul>
+			</nav>
+
+
+			<!-- Comienzo con la información de la página -->
+
+
+			<div class="boton">transferencias<br><img src="img/transf.png" class="icon"></div>
+
+			<!--  Menú desplegable para envío -->
+			<details>   
+				<summary>Pinche aquí para realizar su transferencia.</summary>
+				<!-- Transferencia -->
+				<form>  
+					<table>
+						<tr>
+							<th colspan="4">TRANFERENCIA BANCARÍA:</th>
+						</tr>
+						<tr>
+							<td><label for="nombre"><p>Nombre destinatario:</p></label></td>
+							<td><input type="text" id="name" name="nombre" required></td>
+						</tr>
+						<tr>
+							<td><label for="cuenta"><p>Nº de cuenta / IBAN:</p></label></td>
+							<td><input type="text" id="cuenta" name="cuenta" required></td>
+						</tr>
+						<tr>
+							<td><label for="concepto"><p>Concepto:</p></label></td>
+							<td><input type="text" id="concepto" name="concepto" required></td>
+						</tr>
+						<tr>
+							<td><label for="importe"><p>Importe:</p></label></td>
+							<td><input type="text" id="importe" name="importe" required></td>
+						</tr>
+						<tr>
+							<td><label for="envio"><p>Tipo de envío:</p></label></td>
+							<td><label><input class="select" type="radio" name="envio" value="1" />Inmediato - en este instante (+2 €)</label><br>
+								<label><input class="select" type="radio" name="envio" value="2" />Ordinario - en 48 horas (0 €)</label></td>
+						</tr>
+					</table>
+
+					
+					<input class="botonEnviar" type="submit" value="Enviar">
+					<input class="botonBorrar" type="reset" value="Borrar">
+				</form>
+				<br><br>
+			</details>
+
+			
+
+			<div class="boton">bizum<br><img src="img/bizum.png" class="iconBizum"></div>
+
+
+			<!--  Menú desplegable para envío -->
+			<details>   
+				<summary>Pinche aquí para realizar o recibir un bizum.</summary>
+				<!-- Transferencia -->
+				<form>
+					<table>
+						<tr>
+							<th colspan="4">BIZUM:</th>
+						</tr>
+						<tr>
+							<td><label for="envio"><p>Tipo de bizum:</p></label></td>
+							<td><label><input class="select" type="radio" name="tipo" value="1" />Enviar dinero</label><br>
+								<label><input class="select" type="radio" name="tipo" value="2" />Solicitar dinero</label><br>
+								<label><input class="select" type="radio" name="tipo" value="3" />Donación</label></td>
+						</tr>
+						<tr>
+							<td><label for="numero"><p>Número telefono:</p></label></td>
+							<td><input type="text" id="numero" name="numero" required></td>
+						</tr>
+						<tr>
+							<td><label for="conceptoBizum"><p>Concepto:</p></label></td>
+							<td><input type="text" id="conceptoBizum" name="concepto" required></td>
+						</tr>
+						<tr>
+							<td><label for="importeBizum"><p>Importe:</p></label></td>
+							<td><input type="text" id="importeBizum" name="importe" required></td>
+						</tr>
+					</table>
+
+					
+					<input class="botonEnviar" type="submit" value="Enviar">
+					<input class="botonBorrar" type="reset" value="Borrar">
+				</form>
+				<br><br>
+			</details>
+
+
+			<!-- últimos envíos -->
+			<h2>Recientes...</h2>
+			<section>
+				<div class="contenedores">
+					<h3>EuroSport<img src="img/transf.png" class="ultimo"></h3>
+					<table class="cuentas">
+						<tr>
+							<td>Enviado:</td>
+							<td class="precio">17,05€</td>
+						</tr>
+					</table>
+					<table class="cuentas">
+						<tr class="peque">
+							<td>Pago pelotas de tenis</td>
+						</tr>
+						<tr class="peque">
+							<td class="precio"> Transferencia &#10142; ...2656</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="contenedores">
+					<h3>Dylan Matt<img src="img/bizum.png" class="biz"></h3>
+					<table class="cuentas">
+						<tr>
+							<td>Recibido:</td>
+							<td class="precio">8,00€</td>
+						</tr>
+					</table>
+					<table class="cuentas">
+						<tr class="peque">
+							<td>Regalo para Palmira</td>
+						</tr>
+						<tr class="peque">
+							<td class="precio"> Bizum &#10142; ...1516</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="contenedores">
+					<h3>Erika Avila<img src="img/bizum.png" class="biz"></h3>
+					<table class="cuentas">
+						<tr>
+							<td>Recibido: </td>
+							<td class="precio">18,00€</td>
+						</tr>
+					</table>
+					<table class="cuentas">
+						<tr class="peque">
+							<td>Cenita de compis</td>
+						</tr>
+						<tr class="peque">
+							<td class="precio"> Bizum &#10142; ...1516</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+
+
+		</main>
+
+
+		<!-- CHAT -->
+
+        <input type="checkbox" id="chat-toggle">
+		<label for="chat-toggle" id="chat-button">Chatea con tu gestor</label>
+		<div class="chat-container">
+			<div class="chat-panel">
+				<label for="chat-toggle" class="chat-tab">
+					<div class="chat-icon"></div>
+				</label>
+                
+				<div class="chat-content">
+					<div class="dir">
+                        <h2 class="dir-title">Contacta con tu gestor:</h2>
+                        <h3 class="chatH3">Eliseo Villena</h3>
+                        <br>
+                        <p>☎ 755.123.654<br>✉ e_villena@lifesmoney.es<br></p>
+						<h3 class="chatH3">Comienza a chatear en este momento:</h3>
+                        <br>
+						<p class="chatP">Por favor, introduce tu mensaje. Tu gestor te responderá lo antes posible.</p>
+            			<br>
+						<textarea placeholder="Escribe aquí..."></textarea>
+						<br><br>
+						<button>Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<a href="#inicio"><img src="img/flecha.png" class="up"></a>
+
+		<footer>
+			<div>
+				<p>· Página Web creada por: <font>Yohanna Gelo</font> · Asignatura: <font>Lenguaje de Marcas 2023/24</font> · Curso: <font>1º DAW</font></p>
+			</div>
+		</footer>
+
+
+
+
+    </body>
+
+</html>

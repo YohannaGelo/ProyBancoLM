@@ -1,0 +1,624 @@
+/* cuerpo */
+body {
+    background-image: url("../img/fondoLM2.jpg");
+    background-size: 100%;
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    color: #313131;
+    text-align: justify;
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal del cuerpo */
+}
+
+body > div {
+    width: 100%;
+    display: flex; /* Contenedor flexible */
+}
+
+/* Cabecera */
+.logo {
+    margin-top: 1em;
+    margin-left: -0.5em;
+    width: 105%;
+    background-color: #05050560;
+    height: 6em;
+
+}
+
+.imgNombre {
+    position: relative;
+    margin-top: 1.7em;
+    margin-left: 13.5em;
+    width: 11em;
+    height: auto;
+}
+
+body > div > font {
+    font-size: 3em;
+    margin-top: 0.5em;
+    font-family: 'Exo 2', sans-serif;
+}
+
+img {
+    margin-top: 0.8em;
+    width: 4em;
+    padding: 0.3em;
+    height: 4em;
+}
+
+.imgLogo {
+    margin-left: 9em;
+    
+}
+
+font.profile {
+    font-size: 0.9em;
+    color:aliceblue;
+}
+
+font.desconectar {
+    font-size: 0.7em;
+    color:#084008;
+    margin-top: 4.8em;
+    
+}
+
+.perfil {
+    width: 3.5em;
+    height: 3.5em;
+    margin-left: 0.6em;
+}
+
+img.power {
+    width: 0.9em;
+    height: 0.9em;
+    margin-left: 0.6em;
+    margin-top: 3em;
+}
+
+.candado {
+    margin-left: 7em;
+    margin-right: 0.3em;
+    margin-top: 2.6em;
+    width: 0.8em;
+    height: 1em;
+
+}
+
+body > div > table {
+    margin-bottom: 10em;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+th {
+    padding-top: 1.5em;
+    text-align: left;
+    margin-top: 0;
+}
+
+th > img {
+    margin-top: -2em;
+    margin-bottom: -0.5em;
+    width: 7.5em;
+    height: auto;
+}
+
+td.registro {
+    font-size: 13px;
+    text-indent: 0.5em;
+}
+
+.caja {
+    width: 95%;
+    text-align: left;
+    font-size: medium;
+    margin: 0;
+
+ }
+
+.botonEntrar {
+    float: right;
+    height: 2em;
+    margin-top: 3.8em;
+    margin-left: 0.5em;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #084008;
+    color: #eaf8c3;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* contenedor principal */
+
+main {
+    width: 50em;
+    margin-left: 16%;
+}
+
+        /* icono del menú */
+        .menu-icon {
+            width: 40px; 
+            height: 40px; 
+            background-color: #084008; /* Color del icono */
+            position: absolute;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            top: 3em; 
+            left: 3em; 
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        /* líneas del icono */
+        .line {
+            margin-top: 0.6em;
+            margin-left: 0.5em;
+            display: block;
+            width: 55%;
+            height: 3px; /* Grosor de las líneas */
+            background-color:#eaf8c3; /* Color de las líneas */
+            margin-bottom: 0.3em; /* Espacio entre las líneas */
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        /* ajustes visuales para cada línea */
+        .line:nth-child(1) {
+            margin-bottom: 0.3em;
+        }
+        .line:nth-child(2) {
+            margin-top: 0;
+            margin-bottom: 0.3em;
+        }
+
+        .line:nth-child(3) {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        /* icono del menú cuando está activado */
+        #toggle:checked + .menu-icon .line {
+            background-color: #089835; /* Cambia el color de las líneas cuando se activa */
+        }
+
+        /* menú desplegable */
+        #toggle {
+            display: none; /* Oculta el checkbox */
+        }
+
+        #menu {
+            position: absolute;
+            margin-top: 7em;
+            top: 0;
+            left: -300px; /* Menú oculto al principio */
+            width: 11em; /* Ancho del menú */
+            height: 11.7em;
+            background-color: #084008dc; /* Color del fondo del menú */
+            transition: left 0.3s ease; /* Transición suave al mostrar/ocultar */
+        }
+
+        /* menú principal */
+        #menu ul {
+            list-style: none; /* Quita los puntos de la lista */
+            margin: 0;
+            padding: 0;
+            font-family: 'Exo', sans-serif;
+            /*font-family: 'Lexend Tera', sans-serif;*/
+        }
+
+        /* items del menú principal */
+        #menu ul li {
+            /*background-color: #084008;*/
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 11em;
+        }
+
+        /* enlaces del menú principal */
+        #menu ul a {
+            display: block;
+            text-align: left;
+            color: #eaf8c3;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 0.99em;
+            padding: 0.5em;
+            text-transform: uppercase;
+            /*font-variant:small-caps;*/
+            letter-spacing: 1px;
+            margin: 0em 2em 0em 2em;
+        }
+
+        /* items del menú principal al pasar el ratón */
+        #menu ul li:hover {
+            background:#089835;
+        }
+
+        /* Menú desplegable */
+        #menu ul ul {
+            display: none;
+            position: absolute;
+            top: 0; /* Ajusta la posición del menú desplegable */
+            left: 100%; /* Ajusta la posición del menú desplegable */
+            background:#084008dc;
+            padding: 0;
+            font-family: 'Exo 2', sans-serif; /* Cambia la fuente del menú desplegable */
+            z-index: 1; /* Añade un índice Z para asegurar que se superponga correctamente */
+        }
+
+        /* items del menú desplegable */
+        #menu ul ul li {
+            float: none;
+            width: 15em;
+        }
+
+        /* enlaces de los items del menú desplegable */
+        #menu ul ul a {
+            line-height: 120%;
+            padding: 10px 15px;
+        }
+
+        /* items del menú desplegable al pasar el ratón */
+        #menu ul li:hover > ul {
+            display: block;
+        }
+
+        /* mostrar el menú al hacer clic en el icono */
+        #toggle:checked ~ #menu {
+            left: 0em;
+        }
+
+
+   /* cajas de información */
+main > div > h2 { 
+    font-size: 30px;
+    font-family: 'Viga', sans-serif;
+    margin-left: 15px;
+    color:#089835;
+}
+
+main > img.izq {
+    float: left;
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-right: 1em;
+    width: 27%;
+    height: auto;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 3px solid #fcfff1;
+}
+
+main > img.der {
+    float: right;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 5em;
+    width: 29%;
+    height: auto;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 3px solid #fcfff1;
+}
+
+body > main > div {
+    text-align: justify;    /* texto justificado */
+    width: 25em;
+    margin-top: 3em;
+    margin-bottom: 4%;
+    height: auto;
+    background-color: #fcfff1;
+    border-top-right-radius: 10px; /* Ajusta el valor para cambiar el grado de redondeo */
+    border-bottom-left-radius: 10px;
+    padding-bottom: 15px;
+
+}
+
+.info {
+    text-align: justify;
+    width: 80%;
+    margin-left: 3em;
+    margin-top: -2em;
+    margin-bottom: 1em;
+    height: auto;
+    background-color: transparent;
+    padding:0.4em;
+    padding-right: 1.5em;
+}
+
+body > main > div > div {
+    background-color: #084008 ;
+    border-top-right-radius: 20px;
+    height: 0.5em;
+    margin-top: -10px;
+}
+
+body > main > div.dir {
+    text-align: center;   /* texto justificado */
+    width: 40em;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    margin-bottom: 4%;
+    height: auto;
+    background-color: #fcfff1d8;
+    border-top-right-radius: 10px; /* Ajusta el valor para cambiar el grado de redondeo */
+    border-bottom-left-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.down {
+    background-color: #084008 ;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    height: 0.5em;
+    margin-top: 0px;
+    margin-bottom: -15px;
+
+}
+
+body > main > div > div > h2 {
+    font-size: 26px;
+    font-family: 'Exo 2', sans-serif;
+    font-variant: small-caps;
+    padding-top: 0.4em;
+    color:#089835;
+
+}
+
+body > main > div > div > h2 {
+    font-size: 30px;
+    font-family: 'Exo 2', sans-serif;
+    font-variant: small-caps;
+    padding-top: 1em;
+    color:#089835;
+    
+}
+
+body > main > div > h3 {
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-variant: small-caps;
+    padding-top: 0.1em;
+    margin-bottom: -1.5em;
+    color: #084008 ;
+
+}
+
+body > main > div > h3.advertencia {
+    font-size: 20px;
+    font-family: 'Federant', sans-serif;
+    padding-top: 0.1em;
+    margin-bottom: 0;
+    color:#089835 ;
+    text-align: center;
+
+}
+
+body > main > div  > p {
+    margin: 0   auto;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
+    width: 95%;
+    text-indent: 30px;
+}
+
+.adver {
+    margin: 0   auto;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 0.7em;
+    width: 110%;
+    margin-left: -3%;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+#adverPie {
+    width: 82%;
+    margin-left: 4.8em;
+}
+
+/* tablas */
+table.normal {
+    width: 35em;
+    margin-top: 1em;
+    margin-left: 3.5em;
+    text-align: left;
+}
+
+table.estrecha {
+    width: 20em;
+    margin-top: 1em;
+    text-align: right;
+    margin-left: 7.5em;
+}
+
+.datos {
+    padding-left: 1em;
+    text-align: left;
+}
+
+
+
+
+
+        /* Estilos para el chat */
+        .chat-container {
+            position: fixed;
+            top: 22%;
+            right: -40em; /* Ocultar el chat al inicio */
+            width: 20em;
+            height: 27.5em;
+            background-color: #f0f0f0a9;
+            border: 1px solid #ccc;
+            transition: right 0.3s ease;
+            z-index: 1000;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 20px;
+        }
+
+        .chat-panel {
+            height: 100%;
+        }
+
+        .chat-tab {
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transform: translateY(-50%);
+        }
+
+        .chat-icon {
+            width: 30px;
+            height: 3px;
+            background-color: #084008;
+            margin: 18%;
+            transition: transform 0.3s ease;
+        }
+
+        /* Estilos para el botón */
+        #chat-button {
+            position: fixed;
+            top: 55%;
+            right: -1px;
+            transform: translateY(-50%);
+            padding: 8px 12px;
+            background-color: #f0f0f0ba;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color:#084008;
+            writing-mode: vertical-lr; /* Esta propiedad rota el texto verticalmente */
+            text-align: center;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            width: 1em;
+            height: 27.5em;
+            border-bottom-left-radius: 20px;
+            z-index: 1001; /* Asegura que el botón esté encima del chat */
+        }
+
+        /* Mostrar el chat cuando el input está chequeado */
+        #chat-toggle:checked ~ .chat-container {
+            right: 0;
+        }
+
+        #chat-toggle:checked ~ #chat-button {
+            display: none; /* Ocultar el botón cuando se muestra el chat */
+        }
+
+        #chat-toggle {
+            display: none;  /* Oculta el checkbox pequeño */
+        }
+
+        /* Estilo del contenido */
+
+        .dir {
+            text-align: center;   /* texto justificado */
+            width: 17.5em;
+            margin: 0 auto;
+            height: 30em;
+            border-top-right-radius: 10px; /* Ajusta el valor para cambiar el grado de redondeo */
+            border-bottom-left-radius: 10px;
+            padding-bottom: 15px;
+            margin-left: 0.7em;
+            
+        }
+
+        h2.dir-title {
+            font-size: 30px;
+            font-family: 'Exo 2', sans-serif;
+            font-variant: small-caps;
+            padding-top: 1em;
+            margin-left: 15px;
+            color:#089835;
+            
+        }
+        
+        h3.chatH3 {
+            font-size: 20px;
+            font-family: 'Exo 2', sans-serif;
+            font-variant: small-caps;
+            padding-top: 0.1em;
+            margin-bottom: -1em;
+            margin-left: 15px;
+            color: #084008 ;
+            z-index: 1;
+        
+        }
+
+        p.chatP {
+            font-size: 14px;
+        }
+
+        textarea {
+            width: 18em;
+            height: 6em;
+            margin-left: 1em;
+        }
+
+
+
+
+/* pie de página */
+footer > div {
+    margin-top: 2em;
+    margin-left: -0.5em;
+    width: 105%;
+    background-color: #05050560;
+    height: 2em;
+    align-items: center;
+}
+
+footer > div > p {
+    margin-left: 40em;
+    padding-top: 0.8em;
+    color: #eaf8c3;
+    font-size: 11px;
+    font-weight: normal;
+    
+}
+
+footer > div > p > font {
+    
+    margin-right: 4em;
+    padding-top: 0.7em;
+    color: #eaf8c3;
+    font-size: 13px;
+    font-weight:lighter;
+}
+
+img.up {
+    position: fixed;
+    width: 3em;
+    height: auto;
+    bottom: 1em;
+    right: 1em;
+
+}
+
+
+/* colores de los enlaces */
+a {
+    color:#084008;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    color:#089835 ;
+}
+
+a:active {
+    color:#084008;
+}

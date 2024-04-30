@@ -1,0 +1,380 @@
+/* cuerpo */
+body {
+    background-image: url("../img/fondoLM2.jpg");
+    background-size: 100%;
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    color: #313131;
+    text-align: justify;
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal del cuerpo */
+}
+
+body > div {
+    width: 100%;
+    display: flex; /* Contenedor flexible */
+}
+
+/* Cabecera */
+.logo {
+    margin-top: 1em;
+    margin-left: -0.5em;
+    width: 105%;
+    background-color: #05050560;
+    height: 6em;
+    
+}
+
+.imgNombre {
+    position: relative;
+    margin-top: 1.7em;
+    margin-left: 13.5em;
+    width: 11em;
+    height: auto;
+}
+
+body > div > font {
+    font-size: 3em;
+    margin-top: 0.5em;
+    font-family: 'Exo 2', sans-serif;
+}
+
+img {
+    margin-top: 0.8em;
+     
+    width: 4em;
+    padding: 0.3em;
+    height: 4em;
+}
+
+.imgLogo {
+    margin-left: 9em;
+    
+}
+
+.candado {
+    margin-left: 7em;
+    margin-right: 0.3em;
+    margin-top: 2.6em;
+    width: 0.8em;
+    height: 1em;
+
+}
+
+body > div > table {
+    margin-bottom: 10em;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th {
+    padding-top: 1.5em;
+    text-align: left;
+    margin-top: 0;
+}
+
+th > img {
+    margin-top: -2em;
+    margin-bottom: -0.5em;
+    width: 7.5em;
+    height: auto;
+}
+
+td.registro {
+    font-size: 13px;
+    text-indent: 0.5em;
+}
+
+.caja {
+    width: 95%;
+    text-align: left;
+    font-size: medium;
+    margin: 0;
+
+ }
+
+.botonEntrar {
+    float: right;
+    height: 2em;
+    margin-top: 3.8em;
+    margin-left: 0.5em;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #084008;
+    color: #eaf8c3;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+/* contenedor principal */
+
+main {
+    width: 50em;
+    margin-left: 16%;
+}
+
+
+        /* icono del menú */
+        .menu-icon {
+            width: 40px; 
+            height: 40px; 
+            background-color: #084008; /* Color del icono */
+            position: absolute;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            top: 3em; 
+            left: 3em; 
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        /* líneas del icono */
+        .line {
+            margin-top: 0.6em;
+            margin-left: 0.5em;
+            display: block;
+            width: 55%;
+            height: 3px; /* Grosor de las líneas */
+            background-color:#eaf8c3; /* Color de las líneas */
+            margin-bottom: 0.3em; /* Espacio entre las líneas */
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        /* ajustes visuales para cada línea */
+        .line:nth-child(1) {
+            margin-bottom: 0.3em;
+        }
+        .line:nth-child(2) {
+            margin-top: 0;
+            margin-bottom: 0.3em;
+        }
+
+        .line:nth-child(3) {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        /* icono del menú cuando está activado */
+        #toggle:checked + .menu-icon .line {
+            background-color: #089835; /* Cambia el color de las líneas cuando se activa */
+        }
+
+        /* menú desplegable */
+        #toggle {
+            display: none; /* Oculta el checkbox */
+        }
+
+        #menu {
+            position: absolute;
+            margin-top: 7em;
+            top: 0;
+            left: -300px; /* Menú oculto al principio */
+            width: 11em; /* Ancho del menú */
+            height: 11.7em;
+            background-color: #084008dc; /* Color del fondo del menú */
+            transition: left 0.3s ease; /* Transición suave al mostrar/ocultar */
+        }
+
+        /* menú principal */
+        #menu ul {
+            list-style: none; /* Quita los puntos de la lista */
+            margin: 0;
+            padding: 0;
+            font-family: 'Exo', sans-serif;
+            /*font-family: 'Lexend Tera', sans-serif;*/
+        }
+
+        /* items del menú principal */
+        #menu ul li {
+            /*background-color: #084008;*/
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 11em;
+        }
+
+        /* enlaces del menú principal */
+        #menu ul a {
+            display: block;
+            text-align: left;
+            color: #eaf8c3;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 0.99em;
+            padding: 0.5em;
+            text-transform: uppercase;
+            /*font-variant:small-caps;*/
+            letter-spacing: 1px;
+            margin: 0em 2em 0em 2em;
+        }
+
+        /* items del menú principal al pasar el ratón */
+        #menu ul li:hover {
+            background:#089835;
+        }
+
+        /* Menú desplegable */
+        #menu ul ul {
+            display: none;
+            position: absolute;
+            top: 0; /* Ajusta la posición del menú desplegable */
+            left: 100%; /* Ajusta la posición del menú desplegable */
+            background:#084008dc;
+            padding: 0;
+            font-family: 'Exo 2', sans-serif; /* Cambia la fuente del menú desplegable */
+            z-index: 1; /* Añade un índice Z para asegurar que se superponga correctamente */
+        }
+
+        /* items del menú desplegable */
+        #menu ul ul li {
+            float: none;
+            width: 15em;
+        }
+
+        /* enlaces de los items del menú desplegable */
+        #menu ul ul a {
+            line-height: 120%;
+            padding: 10px 15px;
+        }
+
+        /* items del menú desplegable al pasar el ratón */
+        #menu ul li:hover > ul {
+            display: block;
+        }
+
+        /* mostrar el menú al hacer clic en el icono */
+        #toggle:checked ~ #menu {
+            left: 0em;
+        }
+
+
+
+   /* Imágenes */
+img.inicio {
+    width: 103%;
+    height: auto;
+    margin-left: -0.8em;
+    margin-top: -0.3em;
+    margin-bottom: 1em;
+    opacity: 85%;
+}
+
+
+img.riesgo{
+    width: 35%;
+    height: auto;
+    margin-left: -0.8em;
+    position: absolute;
+    top: 5.9em; 
+}
+
+/* información */
+.divIcon {
+    position: relative;
+    width: 100%;
+    margin-top: -4em;
+    height: 8.4em;
+    background-color: #fcfff1d8;
+    padding:0.4em;
+    padding-right: 1.5em;
+    border-top-right-radius: 20px; /* Ajusta el valor para cambiar el grado de redondeo */
+    border-bottom-left-radius: 20px;
+    border: 1px solid #084008 ;
+    z-index: 2; /* tiene un valor mayor, por lo que estará más al frente - tiene que ser relative */
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0.2em;
+    margin-bottom: 0.1em;
+    color: #313131;
+}
+
+.cajaIcon {
+    margin-top: 0.3;
+    margin-left: 3.8em;
+}
+
+.icon {
+    width: 7.5em;
+    height: auto;
+    margin-right: 2.5em;
+}
+
+section.texto {
+    margin-top: 2em;
+    margin-left: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+a.botonInfo {
+    padding: 0.5em 1em 0.5em 1em;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #084008;
+    color:#eaf8c3;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* pie de página */
+footer > div {
+    margin-top: 2em;
+    margin-left: -0.5em;
+    width: 105%;
+    background-color: #05050560;
+    height: 2em;
+    align-items: center;
+}
+
+footer > div > p {
+    margin-left: 40em;
+    padding-top: 0.8em;
+    color: #eaf8c3;
+    font-size: 11px;
+    font-weight: normal;
+    
+}
+
+footer > div > p > font {
+    
+    margin-right: 4em;
+    padding-top: 0.7em;
+    color: #eaf8c3;
+    font-size: 13px;
+    font-weight:lighter;
+}
+
+img.up {
+    position: fixed;
+    width: 3em;
+    height: auto;
+    bottom: 1em;
+    right: 1em;
+
+}
+
+
+/* colores de los enlaces */
+a {
+    color: #eaf8c3;
+}
+
+a:visited {
+    color: #eaf8c3;
+}
+
+a:hover {
+    color:#eaf8c3 ;
+}
+
+a:active {
+    color:#eaf8c3;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tarjetas - L'sM</title>
+		<link rel="icon" type="image/jpg" href="img/favicon.png"/>
+		<link type="text/css" href="css/estilo-ingresosGastos.css" rel="stylesheet">
+	
+		
+				<!-- Enlaces para importar las fuentes -->
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+					
+
+				<!-- Exo 2  - font-family: 'Exo 2', sans-serif; -->
+				<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
+
+				<!-- Lexend Tera  - font-family: 'Lexend Tera', sans-serif; -->
+				<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+
+				<!-- Viga  - font-family: 'Viga', sans-serif; -->
+				<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+
+	</head>
+
+    <body>
+
+		<a name="inicio"></a>
+		<div class="logo">
+
+			<a href="index.html"><img src="img/Life'sMoney.png" class="imgNombre"></a>		
+			<a href="index.html"><img src="img/logoLM.png" class="imgLogo"></a>
+			
+
+			<!-- Información del Cliente -->
+			<img src="img/candado.png" class="candado">
+			<table>
+				<tr>
+					<th colspan="2"><img src="img/LifesMoneyHub.png" class=""></th>
+				</tr>
+				<tr>
+					<td><font class="profile">Bienvenido John Doe</font></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+			<a href="espacioPersonal.html"><img src="img/perfil.png" class="perfil"></a><a href="index.html"><img src="img/power.png" class="power"></a><font class="desconectar">Desconectar</font>
+		</div>
+
+		<main>
+
+			<!-- Menú desplegable -->
+			<input type="checkbox" id="toggle">
+			<label for="toggle" class="menu-icon">
+				<span class="line"></span>
+        		<span class="line"></span>
+        		<span class="line"></span>
+			</label>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li>
+						<a href="servicios.html">Servicios</a>
+						<ul>
+							<li><a href="envioDinero.html">Envío de dinero</a></li>
+							<li><a href="tarjetas.html">Tarjetas</a></li>
+							<li><a href="ingresosGastos.html">Ingresos y gastos</a></li>
+							
+						</ul>
+					</li>
+					<li>
+						<a href="sobreNosotros.html">Sobre Nosotros</a>
+						<ul>
+							<li><a href="equipo.html">Nuestro equipo</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+						</ul>
+					</li>
+					<li>
+                        <a href="espacioPersonal.html">Espacio personal</a>
+                    </li>
+				</ul>
+			</nav>
+
+			<!-- Comienzo con la información de la página -->
+
+			<section>
+				<div class="contenedores" id="primerContenedor">
+					<h3>CONTRATO LIFE'S DÉBITO</h3>
+					<div class="contenido">
+						<table class="tipoPagos">
+							<tr>
+								<th  colspan="3">Medios de pago asociados:</th>
+							</tr>
+							<tr>
+								<td><img src="img/tarjeta.png" class="iconPagoCard"></td>
+								<td><img src="img/pagoMovil.png" class="iconPagoMovil"></td>
+							</tr>
+						</table>
+						<img src="img/TarjetaDebito.png" class="tarjDebito">
+						<table class="ultMovTarj">
+							<tr>
+								<th colspan="3">Últimos movimientos</th>
+							</tr>
+							<tr class="peque">
+								<td>03 dic</td>
+								<td>Supermercado</td>
+								<td class="precio">34,69€</td>
+							</tr>
+							<tr class="peque">
+								<td>03 dic</td>
+								<td>Farmacia</td>
+								<td class="precio">6,25€</td>
+							</tr>
+							<tr class="peque">
+								<td>27 nov</td>
+								<td>Restaurante</td>
+								<td class="precio">62,35€</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="contenedores" id="segundoContenedor">
+					<h3>CONTRATO LIFE'S CRÉDITO</h3>
+					<div class="contenido">
+						<table class="tipoPagos">
+							<tr>
+								<th>Medios de pago asociados:</th>
+							</tr>
+							<tr>
+								<td><img src="img/tarjeta.png" class="iconPagoCard"></td>
+							</tr>
+						</table>
+						<img src="img/TarjetaCredito.png" class="tarjDebito">
+						
+						<table class="ultMovTarj">
+							<tr>
+								<td class="peque">Préstamo Personal</td>
+								<td>Saldo inicial:</td>
+								<td class="precio">3500,00€</td>
+							</tr>
+							<tr>
+								<th colspan="3">Gastos:</th>
+							</tr>
+							<tr class="peque">
+								<td>22 ago</td>
+								<td>Viaje Gran Canarias</td>
+								<td class="precio">1.100,95€</td>
+							</tr>
+							<tr class="peque">
+								<td>04 mar</td>
+								<td>Smart TV LED 50" </td>
+								<td class="precio">399,05€</td>
+							</tr>
+							<tr>
+								<td colspan="2">Saldo disponible</td>
+								<td class="precio">2000,00€</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				
+			</section>
+		
+
+
+		<!--  Menú desplegable para activar tarjeta -->
+		
+		<h4>Activar / Bolquear tarjeta</h4>
+		<details>  
+			<summary>Activación:</summary>
+			<!-- ACTIVACIÓN -->
+			<form>
+				<table>
+					<tr>
+						<th colspan="4"></th>
+					</tr>
+					<tr>
+						<td><label for="numero"><p>Número de la tarjeta:</p></label></td>
+						<td><input type="text" id="numero" name="numero" required></td>
+					</tr>
+					<tr>
+						<td><label for="fechaCad"><p>Fecha Caducidad:</p></label></td>
+						<td><input type="text" id="fechaCad" name="fechaCad" required></td>
+					</tr>
+				</table>
+				<input class="botonEnviar" type="submit" value="Enviar">
+				<input class="botonBorrar" type="reset" value="Borrar">
+			</form>
+			<br><br>
+		</details>
+
+		<details>  
+			<summary>Bloqueo:</summary>
+			<!-- BLOQUEO -->
+			<form>
+				<table>
+					<tr>
+						<th colspan="4"></th>
+					</tr>
+					<tr>
+						<td><label for="tipoBloqueo"><p>Tipo de bloqueo:</p></label></td>
+						<td><label><input class="select" type="radio" name="tipo" value="1" />Bloqueo Temporal (puede desbloquearse más adelante)</label><br>
+							<label><input class="select" type="radio" name="tipo" value="2" />Bloqueo Total (la tarjeta queda cancelada)</label><br></td>
+					</tr>
+					<tr>
+						<td><label for="numero"><p>Número de la tarjeta:</p></label></td>
+						<td><input type="text" id="numeroTarj" name="numero" required></td>
+					</tr>
+					<tr>
+						<td><label for="fechaCad"><p>Fecha Caducidad:</p></label></td>
+						<td><input type="text" id="fechaCadTarj" name="fechaCad" required></td>
+					</tr>
+				</table>
+				<input class="botonEnviar" type="submit" value="Enviar">
+				<input class="botonBorrar" type="reset" value="Borrar">
+			</form>
+			<br><br>
+		</details>
+
+
+	<!--  Préstamos -->
+		
+	<h4>Préstamos</h4>
+	<p class="pPrestamo" id="gris">Actualmente tiene concedido un préstamo personal a través de su tarjeta de crédito. Puede consultar el estado en la sección superior.</p>
+	<p class="pPrestamo"><b>¿Necesita dinero extra?</b> Puede solicitarlo en cualquiera de <a href="contacto.html">nuestras oficinas</a>, llamando por <a href="contacto.html">teléfono</a> o poniendose en contacto con su gestor desde esta misma página (despliegue la pestaña lateral derecha y comience a chatear).</p>
+
+</main>
+
+
+		<!-- CHAT -->
+
+        <input type="checkbox" id="chat-toggle">
+		<label for="chat-toggle" id="chat-button">Chatea con tu gestor</label>
+		<div class="chat-container">
+			<div class="chat-panel">
+				<label for="chat-toggle" class="chat-tab">
+					<div class="chat-icon"></div>
+				</label>
+                
+				<div class="chat-content">
+					<div class="dir">
+                        <h2 class="dir-title">Contacta con tu gestor:</h2>
+                        <h3 class="chatH3">Eliseo Villena</h3>
+                        <br>
+                        <p>☎ 755.123.654<br>✉ e_villena@lifesmoney.es<br></p>
+						<h3 class="chatH3">Comienza a chatear en este momento:</h3>
+                        <br>
+						<p class="chatP">Por favor, introduce tu mensaje. Tu gestor te responderá lo antes posible.</p>
+            			<br>
+						<textarea placeholder="Escribe aquí..."></textarea>
+						<br><br>
+						<button>Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<a href="#inicio"><img src="img/flecha.png" class="up"></a>
+
+		<footer>
+			<div>
+				<p>· Página Web creada por: <font>Yohanna Gelo</font> · Asignatura: <font>Lenguaje de Marcas 2023/24</font> · Curso: <font>1º DAW</font></p>
+			</div>
+		</footer>
+
+
+    </body>
+
+</html>
